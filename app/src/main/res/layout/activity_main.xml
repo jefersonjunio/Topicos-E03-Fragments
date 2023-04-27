@@ -8,12 +8,16 @@
     tools:context="br.ufmg.coltec.tp.e03_adapters.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/frag_place_list"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_margin="8dp"
         class="br.ufmg.coltec.tp.e03_adapters.PlacesListFragment"
         tools:layout="@layout/fragment_places_list">
     </androidx.fragment.app.FragmentContainerView>
 
+
+<!--TODO[3] Incluir o componente de fragment que está faltando aqui! -->
     <androidx.fragment.app.FragmentContainerView
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -21,7 +25,4 @@
         android:id="@+id/frag_places_details"
         tools:layout="@layout/fragment_place_details"/>
 
-
-
-<!--TODO[3] Incluir o componente de fragment que está faltando aqui! -->
 </LinearLayout>

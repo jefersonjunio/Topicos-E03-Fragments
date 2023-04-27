@@ -1,5 +1,7 @@
 package br.ufmg.coltec.tp.e03_adapters;
 
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -21,5 +23,10 @@ public class PlaceFragment extends Fragment {
         TextView tv_distance = this.getView().findViewById(R.id.txt_place_distance);
 
         tv_place_titulo.setText(place.getName());
+        img_place_photo.setImageResource(place.getPhotoId());
+        tv_place_description.setText(place.getDescription());
+        rt_rating.setRating(place.getRate());
+        tv_distance.setText(place.getDistance().toString());
+
     }
 }
